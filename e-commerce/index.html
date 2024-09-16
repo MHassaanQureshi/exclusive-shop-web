@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Shop</title>
+    <link rel="stylesheet" href="home-style.css">
+</head>
+<body>
+    <header>
+        <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
+        <a href="">ShopNow</a>
+        <div>
+            <select name="Language" id="langauge-select">
+                <option value="English">English</option>
+                <option value="Urdu">Urdu</option>
+                <option value="Urdu">Spanish</option>
+                <option value="Urdu">Russia</option>
+            </select>
+        </div>
+    </header>
+    <nav id="navbar">
+        <h1>Exclusive</h1>
+        
+        <ul>
+            <li class="hov hide"><a href="#">Home</a></li>
+            <li class="hov hide" ><a href="contact.html">Contact</a></li>
+            <li class="hov hide"><a href="signup.html">About</a></li>
+            <li class="hov hide" ><a href="signup.html">Sign Up</a></li>
+        </ul>
+        <div id="Search" class="hide">
+            <div class="search-wrap hide">
+                <input type="text" id="Search_bar" class="hide" placeholder="Search What You're Looking for">
+                <img src="Component 2.png" alt="" id="Search_icon" class="hide">
+            </div>
+            <img src="Vector (1).png" alt="" id="like" class="hov hide">
+            <img src="Cart1 with buy.png" alt="" id="cart" class="hov hide" >
+            <img src="profile.png" alt="Profile" onclick="show()" id="img">
+            <img src="close (1).png" alt="Close" id="close" onclick="unshow()" style="display:none;">
+            <img src="menu (1).png" alt=""  id="menu" class="show" onclick=menu()>
+        </div>
+        <div class="dropdown" id="profile-dropdown" style="opacity: 0; visibility: hidden;">
+            <div class="profile-drop">
+                <img src="/profile.png" alt="">
+                <h4>Username</h4>
+            </div>
+            <div class="list-profile">
+                <ul>
+                    <li><a href="">Manage My Account</a></li>
+                    <li><a href="">My Order</a></li>
+                    <li><a href="">My Cancellations</a></li>
+                    <li><a href="">My Review</a></li>
+                    <li><a href="login.html">login</a></li>
+                    <li><a href="">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <div class="sidebar-icons">
+            <div class="sidebar-search">
+                <div class="sidebar-search-wrap">
+                    <input type="text" id="sidebar-search-bar" placeholder="Search What You're Looking for">
+                    <img src="Component 2.png" alt="Search" id="sidebar-search-icon">
+                </div>
+                
+            </div>
+            <img src="Vector (1).png" alt="Like" class="icon hov" id="sidebar-like-icon">
+            <img src="Cart1 with buy.png" alt="Cart" class="icon hov" id="sidebar-cart-icon">
+            <img src="close (1).png" alt=""  id="close" class="show" onclick=closebtn()>
+            
+        </div>
+        <ul>
+            <li class="hov hide"><a href="#">Home</a></li>
+            <li class="hov hide" ><a href="contact.html">Contact</a></li>
+            <li class="hov hide"><a href="index.html">About</a></li>
+            <li class="hov hide" ><a href="signup.html">Sign Up</a></li>
+        </ul>
+        
+    </div>
+    <!-- <div id="line"></div> -->
+     <div class="hero-section" id="hero">
+        <div class="category-section">
+            <ul id="cat-list" >
+                <li class="hov">
+                    <label for="women-categories">Women's fashion</label>
+                    <select name="category" id="women-categories"></select>
+                </li>
+                <li class="hov">
+                    <label for="men-categories">Men's fashion</label>
+                    <select name="category" id="men-categories"></select>
+                </li>
+                <li class="hov"><a href="#">Electronics</a></li>
+                <li class="hov"><a href="#">Home & Lifestyle</a></li>
+                <li class="hov"><a href="#">Medicine</a></li>
+                <li class="hov"><a href="#">Sports and Outdoor</a></li>
+                <li class="hov"><a href="#">Baby’s & Toys</a></li>
+                <li class="hov"><a href="#">Groceries & Pets</a></li>
+                <li class="hov"><a href="#">Health & Beauty</a></li>
+            </ul>
+        </div>
+        <div class="hero-2">
+            <img src="Frame 560 (1).png" alt="" id="hero-img">
+        </div>
+     </div>
+   
+     <div class="flash-sales">
+        <div class="part-1">
+            <div id="red-box"></div>
+            <p>Today's</p>
+        </div>
+        <div class="part-2">
+            <div id="clock">
+                <h2>Flash Sales</h2>
+                <div><div class="countdown" id="timer1">
+                    <div>
+                        <span class="days">0</span>
+                        <span>Days</span>
+                    </div>
+                    <div>
+                        <span class="hours">00</span>
+                        <span>Hours</span>
+                    </div>
+                    <div>
+                        <span class="mins">00</span>
+                        <span>Minutes</span>
+                    </div>
+                    <div>
+                        <span class="seconds">00</span>
+                        <span>Seconds</span>
+                    </div>
+                </div></div>
+                <div class="img-button">
+                    <img src="icons_arrow-left.png" alt="" id="left">
+                    <img src="icons arrow-right.png" alt="" id="right">
+                </div>
+            </div>
+        </div>
+        <div class="cards-wrap">
+            <div class="cards">
+                <div class="card-1">
+                    <div class="card-style">
+                        <div class="disc">
+                            <p>-40%</p>
+                        </div>
+                        <div class="like-view">
+                            <img src="Vector (2).png" alt="" class="like-card hov">
+                            <img src="Group.png" alt="" class="like-card hov">
+                        </div>
+                        <img src="Frame 611.png" alt="" class="card-1-img">
+                        <p class="content">Add to Cart</p>
+                        <div class="about-item">
+                            <p class="item-name">HAVIT HV-G92 Gamepad</p>
+                            <div class="price">
+                                <p class="org-price">$120</p>
+                                <p class="cut-price">$160</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <img src="Five star.png" alt="">
+                            <p>(88)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="card-style">
+                        <div class="disc">
+                            <p>-35%</p>
+                        </div>
+                        <div class="like-view">
+                            <img src="Vector (2).png" alt="" class="like-card hov">
+                            <img src="Group.png" alt="" class="like-card hov">
+                        </div>
+                        <img src="Frame 612.png" alt="" class="card-1-img">
+                        <p class="content">Add to Cart</p>
+                        <div class="about-item">
+                            <p class="item-name">AK-900 Wired Keyboard</p>
+                            <div class="price">
+                                <p class="org-price">$960</p>
+                                <p class="cut-price">$1160</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <img src="Five star.png" alt="">
+                            <p>(75)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="card-style">
+                        <div class="disc">
+                            <p>-30%</p>
+                        </div>
+                        <div class="like-view">
+                            <img src="Vector (2).png" alt="" class="like-card hov">
+                            <img src="Group.png" alt="" class="like-card hov">
+                        </div>
+                        <img src="Frame 613.png" alt="" class="card-1-img">
+                        <p class="content">Add to Cart</p>
+                        <div class="about-item">
+                            <p class="item-name">IPS LCD Gaming Monitor</p>
+                            <div class="price">
+                                <p class="org-price">$370</p>
+                                <p class="cut-price">$400</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <img src="Five star.png" alt="">
+                            <p>(98)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="card-style">
+                        <div class="disc">
+                            <p>-25%</p>
+                        </div>
+                        <div class="like-view">
+                            <img src="Vector (2).png" alt="" class="like-card hov">
+                            <img src="Group.png" alt="" class="like-card hov">
+                        </div>
+                        <img src="Frame 614 (1).png" alt="" class="card-1-img">
+                        <p class="content">Add to Cart</p>
+                        <div class="about-item">
+                            <p class="item-name">S-Series Comfort Chair</p>
+                            <div class="price">
+                                <p class="org-price">$375</p>
+                                <p class="cut-price">$400</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <img src="Five star.png" alt="">
+                            <p>(72)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="card-style">
+                        <div class="disc">
+                            <p>-40%</p>
+                        </div>
+                        <div class="like-view">
+                            <img src="Vector (2).png" alt="" class="like-card hov">
+                            <img src="Group.png" alt="" class="like-card hov">
+                        </div>
+                        <img src="Frame 611.png" alt="" class="card-1-img">
+                        <p class="content">Add to Cart</p>
+                        <div class="about-item">
+                            <p class="item-name">HAVIT HV-G92 Gamepad</p>
+                            <div class="price">
+                                <p class="org-price">$120</p>
+                                <p class="cut-price">$160</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <img src="Five star.png" alt="">
+                            <p>(88)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="card-style">
+                        <div class="disc">
+                            <p>-40%</p>
+                        </div>
+                        <div class="like-view">
+                            <img src="Vector (2).png" alt="" class="like-card hov">
+                            <img src="Group.png" alt="" class="like-card hov">
+                        </div>
+                        <img src="Frame 611.png" alt="" class="card-1-img">
+                        <p class="content">Add to Cart</p>
+                        <div class="about-item">
+                            <p class="item-name">HAVIT HV-G92 Gamepad</p>
+                            <div class="price">
+                                <p class="org-price">$120</p>
+                                <p class="cut-price">$160</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <img src="Five star.png" alt="">
+                            <p>(88)</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat .card-1 for additional cards -->
+            </div>
+        </div>
+        <div class="view-product-button">
+            <button class="hov-2">View All Products</button>
+        </div>
+    </div>
+    <div class="Category-explore">
+        <div>
+            <div class="part-3">
+                <div id="red-box"></div>
+                <p>Categories</p>
+            </div>
+            <div class="categories-button">
+                <div class="categories-button">
+                    <h2>Browse By Category</h2>
+                    <div class="img-button">
+                        <img src="icons_arrow-left.png" alt="" id="left" class="cat-left">
+                        <img src="icons arrow-right.png" alt="" id="right" class="cat-right">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="cat-cards-wrap">
+                <div class="cat-cards">
+                    <div id="cat-card-1">
+                        <div id="cat-card-inner">
+                            <img src="Category-CellPhone.png" alt="Phone" class="cat-logo">
+                            <a href="">Phones</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-cards">
+                    <div id="cat-card-1">
+                        <div id="cat-card-inner">
+                            <img src="Category-Computer.png" alt="Phone" class="cat-logo">
+                            <a href="">Computer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-cards">
+                    <div id="cat-card-1">
+                        <div id="cat-card-inner">
+                            <img src="Category-Gamepad.png" alt="Phone" class="cat-logo">
+                            <a href="">GamePad</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-cards">
+                    <div id="cat-card-1">
+                        <div id="cat-card-inner">
+                            <img src="Category-SmartWatch.png" alt="Phone" class="cat-logo">
+                            <a href="">SmartWatch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-cards">
+                    <div id="cat-card-1">
+                        <div id="cat-card-inner">
+                            <img src="Category-Headphone.png" alt="Phone" class="cat-logo">
+                            <a href="">Headphones</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-cards">
+                    <div id="cat-card-1">
+                        <div id="cat-card-inner">
+                            <img src="Category-CellPhone.png" alt="Phone" class="cat-logo">
+                            <a href="">Phones</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-cards">
+                    <div id="cat-card-1">
+                        <div id="cat-card-inner">
+                            <img src="Category-Gamepad.png" alt="Phone" class="cat-logo">
+                            <a href="">GamePad</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-cards">
+                    <div id="cat-card-1">
+                        <div id="cat-card-inner">
+                            <img src="Category-SmartWatch.png" alt="Phone" class="cat-logo">
+                            <a href="">SmartWatch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-cards">
+                    <div id="cat-card-1">
+                        <div id="cat-card-inner">
+                            <img src="Category-Computer.png" alt="Phone" class="cat-logo">
+                            <a href="">Computer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-cards">
+                    <div id="cat-card-1">
+                        <div id="cat-card-inner">
+                            <img src="Category-Headphone.png" alt="Phone" class="cat-logo">
+                            <a href="">Headphones</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="best-selling">
+        <div class="BS-Top">
+            <div class="part-3">
+                <div id="red-box"></div>
+                <p>This Month</p>
+            </div>
+            <div class="best-sell-2">
+                <h1>Best Selling Products</h1>
+                <button class="hov-2">View All</button>
+            </div>
+        </div>
+        <div class="best-sell-card-wrap">
+            <div class="bs-cards">
+                <div class="card-1">
+                    <div class="card-style">
+                        
+                        <div class="like-view">
+                            <img src="Vector (2).png" alt="" class="like-card hov">
+                            <img src="Group.png" alt="" class="like-card hov">
+                        </div>
+                        <img src="Frame 612 (1).png" alt="" class="card-1-img">
+                        <p class="content">Add To Cart</p>
+                        <div class="about-item">
+                            <p class="item-name">Small BookSelf</p>
+                            <div class="price">
+                                <p class="org-price">$360</p>
+                                <p class="cut-price">$460</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <img src="Five star.png" alt="">
+                            <p>(88)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="card-style">
+                        
+                        <div class="like-view">
+                            <img src="Vector (2).png" alt="" class="like-card hov">
+                            <img src="Group.png" alt="" class="like-card hov">
+                        </div>
+                        <img src="Frame 606.png" alt="" class="card-1-img">
+                        <p class="content">Add to Cart</p>
+                        <div class="about-item">
+                            <p class="item-name">Gucci Duffle bag</p>
+                            <div class="price">
+                                <p class="org-price">$960</p>
+                                <p class="cut-price">$1160</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <img src="Five star.png" alt="">
+                            <p>(88)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="card-style">
+                        
+                        <div class="like-view">
+                            <img src="Vector (2).png" alt="" class="like-card hov">
+                            <img src="Group.png" alt="" class="like-card hov">
+                        </div>
+                        <img src="Frame 605.png" alt="" class="card-1-img">
+                        <p class="content">Add to Cart</p>
+                        <div class="about-item">
+                            <p class="item-name">The north coat</p>
+                            <div class="price">
+                                <p class="org-price">$260</p>
+                                <p class="cut-price">$360</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <img src="Five star.png" alt="">
+                            <p>(88)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="card-style">
+                        
+                        <div class="like-view">
+                            <img src="Vector (2).png" alt="" class="like-card hov">
+                            <img src="Group.png" alt="" class="like-card hov">
+                        </div>
+                        <img src="Frame 610.png" alt="" class="card-1-img">
+                        <p class="content">Add to Cart</p>
+                        <div class="about-item">
+                            <p class="item-name">RGB liquid CPU Cooler</p>
+                            <div class="price">
+                                <p class="org-price">$160</p>
+                                <p class="cut-price">$170</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <img src="Five star.png" alt="">
+                            <p>(88)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="speaker">
+        <div class="speaker-bg">
+            <div class="speaker-img-inner">
+                <a id="speaker-link" href="">Categories</a>
+                <p id="speaker-parah">Enhance Your Music Experience</p>
+                <div>
+                    <div class="countdown" id="timer2">
+                        <div>
+                            <span class="days">0</span>
+                            <span>Days</span>
+                        </div>
+                        <div>
+                            <span class="hours">00</span>
+                            <span>Hours</span>
+                        </div>
+                        <div>
+                            <span class="mins">00</span>
+                            <span>Minutes</span>
+                        </div>
+                        <div>
+                            <span class="seconds">00</span>
+                            <span>Seconds</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-buy">
+                <button>Buy Now!</button>
+            </div>
+        </div>
+        <div class="speaker-img">
+            <img src="Frame 694.png" alt="">
+        </div>
+    </div>
+    <div>
+        <div class="new-arrival">
+            <div class="part-4">
+                <div id="red-box"></div>
+                <p>Featured</p>
+            </div>
+            <div class="arr-head">
+                <h1>New Arrival</h1>
+            </div>
+            <div class="arr-cards">
+                <div class="newarr-bg" id="ps-bg">
+                    <div class="ps-img-inner">
+                        <img src="ps5-slim-goedkope-playstation_large 1.png" alt="">
+                        <h2>PlayStation 5</h2>
+                        <p id="ps-parah">Black and White version of the PS5 coming out on sale</p>
+                        <a id="Ps-link" href="">Shop Now</a>
+                    </div>
+                </div>
+                <div class="section-2">
+                    <div class="newarr-bg" id="women-bg">
+                        <div class="women-img-inner">
+                            <div><h2>Women's Collections</h2>
+                                <p id="women-parah">Featured woman collections that give you another vibe.</p>
+                                <a id="women-link" href="">Shop Now</a></div>
+                            <img src="attractive-woman-wearing-hat-posing-black-background 1.png" alt="">
+                            
+                        </div>
+                    </div>
+                    <div class="section-3">
+                        <div class="newarr-bg" id="speaker-bg">
+                            <div class="speaker-img-inner2">
+                                <div>
+                                    <h2>Speakers</h2>
+                                    <p id="speak-parah">Amazon wireless speakers</p>
+                                    <a id="speak-link" href="">Shop Now</a></div>
+                                    <img src="Frame 707.png" alt="">
+                                
+                            </div>
+                        </div>
+                        <div class="newarr-bg" id="perfume-bg">
+                            <div class="perfume-img-inner">
+                                <div><h2>Perfume</h2>
+                                    <p id="perfume-parah">GUCCI INTENCE OUD EDP</p>
+                                    <a id="perfume-link" href="">Shop Now</a></div>
+                                <img src="Frame 706.png" alt="">
+                                
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="circles-parts">
+        <div class="delivery-card">
+            <div class="delivery-part">
+                <img src="icon-delivery.png" alt="" id="delivery">
+            </div>
+            <div class="Delivery-text">
+                <h3>FAST AND FREE DELIVERY</h3>
+                <P>Free delivery for all orders above $140</P>
+            </div>
+        </div>
+        <div class="delivery-card">
+            <div class="delivery-part">
+                <img src="Icon-Customer service.png" alt="" id="delivery">
+            </div>
+            <div class="Delivery-text">
+                <h3>24/7 CUSTOMER SERVICE</h3>
+                <P>Friendly 24/7 customer support</P>
+            </div>
+        </div>
+        <div class="delivery-card">
+            <div class="delivery-part">
+                <img src="Icon-secure.png" alt="" id="delivery">
+            </div>
+            <div class="Delivery-text">
+                <h3>MONEY BACK GUARANTEE</h3>
+                <P>We reurn money within 30 days</P>
+            </div>
+        </div>
+       
+    </div>
+    <button id="btt" class="hov" href="#hero" onclick="scrollToSection()"><img src="icons_arrow-up.png" alt=""></button>
+    <footer id="footer">
+       
+        <div id="links">
+            <div id="side-1">
+                <h2>Exclusive</h2>
+                <a href="">Subscribe</a>
+                <p>Get 10% off your first order</p>
+                <div class="input-feild">
+                    <input type="text" placeholder="Enter your Email">
+                    <button ><img src="icon-send.png" alt=""></button>
+                </div>
+                
+                
+                
+            </div>
+            <div id="side-2">
+                <h2>Support</h2>
+                <p>Karachi,Pakistan</p>
+                <a href="">exclusive@gmail.com</a>
+                <p>+88015-88888-9999</p>
+                
+            </div>
+            <div id="side-3">
+                <h2>Account</h2>
+                <a href="">My Account</a>
+                <a href="">Login / Register</a>
+                <a href="">Cart</a>
+                <a href="">Wishlist</a>
+                <a href="">Shop</a>
+              
+            </div>
+            <div id="side-4">
+                <h2>Quick Link</h2>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms Of Use</a>
+                <a href="">FAQ</a>
+                <a href="">Contact</a>
+                
+              
+            </div>
+            <div id="side-5">
+                <h2>Download App</h2>
+                <p>Save $3 with App New User Only</p>
+                <div class="download-opt">
+                    <button><img src="Qr Code.png" alt=""></button>
+                    <div class="download ">
+                        <button><img src="png-transparent-google-play-store-logo-google-play-app-store-android-wallets-text-label-logo.png" alt=""></button>
+                        <button><img src="download-appstore.png" alt=""></button>
+                    </div>
+                </div>
+                
+                <div class="socials">
+                <a href=""><img src="Group (1).png" alt=""></a>
+                <a href=""><img src="Vector (5).png" alt=""></a>
+                <a href=""><img src="Vector (4).png" alt=""></a>
+                <a href=""><img src="Vector (3).png" alt=""></a>
+                </div>
+                
+              
+            </div>
+        </div>
+       
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

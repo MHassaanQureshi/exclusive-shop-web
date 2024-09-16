@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact-style.css">
+</head>
+<body>
+    <header>
+        <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
+        <a href="">ShopNow</a>
+        <div>
+            <select name="Language" id="langauge-select">
+                <option value="English">English</option>
+                <option value="Urdu">Urdu</option>
+                <option value="Urdu">Spanish</option>
+                <option value="Urdu">Russia</option>
+            </select>
+        </div>
+    </header>
+    <nav id="navbar">
+        <h1>Exclusive</h1>
+        
+        <ul>
+            <li class="hov hide"><a href="index.html">Home</a></li>
+            <li class="hov hide" ><a href="contact.html">Contact</a></li>
+            <li class="hov hide"><a href="#">About</a></li>
+            <li class="hov hide" ><a href="signup.html">Sign Up</a></li>
+        </ul>
+        <div id="Search" class="hide">
+            <div class="search-wrap hide">
+                <input type="text" id="Search_bar" class="hide" placeholder="Search What You're Looking for">
+                <img src="Component 2.png" alt="" id="Search_icon" class="hide">
+            </div>
+            
+            <img src="profile.png" alt="Profile" onclick="show()" id="img">
+            <img src="close (1).png" alt="Close" id="close" onclick="unshow()" style="display:none;">
+            <img src="menu (1).png" alt=""  id="menu" class="show" onclick=menu()>
+        </div>
+        <div class="dropdown" id="profile-dropdown" style="opacity: 0; visibility: hidden;">
+            <div class="profile-drop">
+                <img src="profile.png" alt="">
+                <h4>Username</h4>
+            </div>
+            <div class="list-profile">
+                <ul>
+                    <li><a href="">Manage My Account</a></li>
+                    <li><a href="">My Order</a></li>
+                    <li><a href="">My Cancellations</a></li>
+                    <li><a href="">My Review</a></li>
+                    <li><a href="login.html">login</a></li>
+                    <li><a href="">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <div class="sidebar-icons">
+            <div class="sidebar-search">
+                <div class="sidebar-search-wrap">
+                    <input type="text" id="sidebar-search-bar" placeholder="Search What You're Looking for">
+                    <img src="Component 2.png" alt="Search" id="sidebar-search-icon">
+                </div>
+                
+            </div>
+            <img src="Vector (1).png" alt="Like" class="icon hov" id="sidebar-like-icon">
+            <img src="Cart1 with buy.png" alt="Cart" class="icon hov" id="sidebar-cart-icon">
+            <img src="close (1).png" alt=""  id="close" class="show" onclick=closebtn()>
+            
+        </div>
+        <ul>
+            <li class="hov hide"><a href="index.html">Home</a></li>
+            <li class="hov hide" ><a href="#">Contact</a></li>
+            <li class="hov hide"><a href="#">About</a></li>
+            <li class="hov hide" ><a href="signup.html">Sign Up</a></li>
+        </ul>
+        
+    </div>
+    <h4 id="page">Home/Contact</h4>
+    <div class="mid-section">
+        <div class="contact-detail">
+            <div class="call-details">
+                <span class="call-contact">
+                <img src="Vector (6).png" alt="" id="call">
+                <h4>Call To Us</h4></span>
+                <span id="address">
+                    <p>We are available 24/7, 7 days a week.</p>
+                    <p>Phone: +8801611112222</p>
+                </span>
+            </div>
+            <div class="msg-details">
+                <span class="call-contact">
+                <img src="Vector (7).png" alt="" id="msg">
+                <h4>Write To Us</h4></span>
+                <span id="form-details">
+                    <p>Fill out our form and we will contact you within 24 hours</p>
+                    <p>Emails: customer@exclusive.com</p>
+                    <p>Emails: support@exclusive.com</p>
+                </span>
+            </div>
+
+        </div>
+        <div class="msg-form">
+            <div class="contact-form">
+                <div class="personal-details">
+                    <input type="text" placeholder="Your Name*">
+                    <input type="text" placeholder="Your Email*">
+                    <input type="text" placeholder="Your Phone*">
+                    
+                </div>
+                <div class="message">
+                    <input type="text" placeholder="Your Message">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="footer">
+       
+        <div id="links">
+            <div id="side-1">
+                <h2>Exclusive</h2>
+                <a href="">Subscribe</a>
+                <p>Get 10% off your first order</p>
+                <div class="input-feild">
+                    <input type="text" placeholder="Enter your Email">
+                    <button ><img src="icon-send.png" alt=""></button>
+                </div>
+                
+                
+                
+            </div>
+            <div id="side-2">
+                <h2>Support</h2>
+                <p>Karachi,Pakistan</p>
+                <a href="">exclusive@gmail.com</a>
+                <p>+88015-88888-9999</p>
+                
+            </div>
+            <div id="side-3">
+                <h2>Account</h2>
+                <a href="">My Account</a>
+                <a href="">Login / Register</a>
+                <a href="">Cart</a>
+                <a href="">Wishlist</a>
+                <a href="">Shop</a>
+              
+            </div>
+            <div id="side-4">
+                <h2>Quick Link</h2>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms Of Use</a>
+                <a href="">FAQ</a>
+                <a href="">Contact</a>
+                
+              
+            </div>
+            <div id="side-5">
+                <h2>Download App</h2>
+                <p>Save $3 with App New User Only</p>
+                <div class="download-opt">
+                    <button><img src="Qr Code.png" alt=""></button>
+                    <div class="download ">
+                        <button><img src="png-transparent-google-play-store-logo-google-play-app-store-android-wallets-text-label-logo.png" alt=""></button>
+                        <button><img src="download-appstore.png" alt=""></button>
+                    </div>
+                </div>
+                
+                <div class="socials">
+                <a href=""><img src="Group (1).png" alt=""></a>
+                <a href=""><img src="Vector (5).png" alt=""></a>
+                <a href=""><img src="Vector (4).png" alt=""></a>
+                <a href=""><img src="Vector (3).png" alt=""></a>
+                </div>
+                
+              
+            </div>
+        </div>
+       
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

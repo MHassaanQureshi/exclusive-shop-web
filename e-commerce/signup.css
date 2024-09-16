@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "poppins",sans-serif;
+}
+body{
+    overflow-x: hidden;
+    width: auto;
+    height: 100%;
+}
+
+header{
+    width: 100%;
+    height: 48px;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+
+}
+
+header a{
+    color:white;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+#langauge-select{
+    background: black;
+    color: white;
+    border: none;
+    margin-left: 10rem;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+    margin-left: 13rem;
+    margin-top: 2rem;
+    border-bottom: 1px solid gray;
+
+}
+.sidebar{
+    display: none;
+    flex-direction: column;
+    
+}
+#menu-icon{
+    width: 24px;
+    height: 24px;
+    
+}
+.sidebar-search-wrap{
+    background: rgba(128, 128, 128, 0.321);
+    display: flex;
+    flex-direction: row;
+    height: 28px;
+    width: 230px;
+    margin-top: 2rem;
+}
+#sidebar-search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#sidebar-search-bar{
+    border: none;
+    background: transparent;
+    padding: 5px 5px;
+    
+}
+#sidebar-search-icon{
+    width: 24px;
+    height: 24px;
+    
+    margin-left: 1rem;
+}
+.hov:hover{
+    background: rgba(128, 128, 128, 0.321);
+    cursor: pointer;
+}
+#sidebar-like-icon{
+    width: 20px;
+    height: 20px;
+    margin-top: 0.4rem;
+    padding: 10px;
+    margin-left: 1rem;
+    
+}
+.sidebar-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+li select{
+    background: transparent;
+}
+
+#sidebar-cart-icon{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    
+}
+#menu{
+    width: 24px;
+    height: 24px;
+    padding-right: 1rem;
+    display: none;
+}
+#close{
+    width: 16px;
+    height: 16px;
+    padding: 0px 10px;
+}
+/* Large screens (1200px and up) */
+@media (max-width: 800px) {
+    .sidebar{
+        
+        background-color: rgba(0, 0, 0, 0);
+        height: 100vh;
+        width: auto;
+        
+        justify-content: flex-start;
+        
+    }
+    #navbar{
+        margin-left: 0%;
+        width: 100%;
+    }
+    .hide{
+        display: none;
+    }
+    .sidebar-links{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 10px;
+        margin-left: 1rem;
+
+    }
+    #menu{
+        display: flex;
+    }
+    .sidebar-search-wrap{
+        padding-top: 0%;
+        margin-bottom: 1.6rem;
+    }
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+#navbar ul li{
+    padding: 10px;
+}
+#Search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.search-wrap{
+    background: rgba(128, 128, 128, 0.321);
+    display: flex;
+    flex-direction: row;
+    height: 38px;
+}
+#Search_bar{
+    border: none;
+    background: transparent;
+    padding: 5px 5px;
+    
+}
+#Search_icon{
+    width: 24px;
+    height: 24px;
+    margin-top: 0.4rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.hov:hover{
+    background: rgba(128, 128, 128, 0.321);
+    cursor: pointer;
+}
+
+li select{
+    background: transparent;
+}
+
+
+
+#footer{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(0, 0, 0);
+    
+}
+#links{
+    display: inline-flex;
+    
+}
+#links a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#side-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+#side-1 p{
+    width: 300px;
+}
+.input-feild{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+
+}
+
+.input-feild input{
+    background: transparent;
+    border: 1px solid white;
+    border-right: none;
+    height: 30px;
+    padding: 10px;
+    color: white;
+}
+.input-feild input:focus{
+    
+    outline: none;
+}
+.input-feild button{
+    background: transparent;
+    border: none;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    cursor: pointer;
+}
+.input-feild button img{
+    padding-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+#side-1 h2{
+    font-size: 20px;
+}
+#side-1 a{
+    color: white;
+    text-decoration: none;
+}
+#side-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin-top: 2rem;
+   
+    gap: 1rem;
+}
+#side-2 h2{
+    font-size: 20px;
+}
+#side-2 a{
+    color: white;
+    text-decoration: none;
+}
+#side-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin-top: 6rem;
+    margin-left: 5rem;
+    gap: 1rem;
+}
+#side-3 h2{
+    font-size: 20px;
+}
+#side-3 a{
+    color: white;
+    text-decoration: none;
+}
+#side-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin-top: 40px;
+    margin-left: 5rem;
+    gap: 1rem;
+}
+#side-4 h2{
+    font-size: 20px;
+}
+#side-4 a{
+    color: white;
+    text-decoration: none;
+}
+#side-5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin-top: 60px;
+    margin-left: 70px;
+}
+.download-opt{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+    
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.download{
+    display: flex;
+    flex-direction: column;
+    
+}
+.download button{
+    cursor: pointer;
+    border: none;
+}
+.image img{
+    width: 550px;
+    height: 600px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    padding: 10px;
+}
+#navbar ul li a , .sidebar ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+.mid-section{
+    display: flex;
+    flex-direction: row;
+}
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+
+}
+.signup-form h2{
+    margin-left: 3rem;
+    font-size: 2.5rem;
+    padding: 10px;
+}
+.signup-form p{
+    margin-left: -7rem;
+    padding: 10px;
+}
+.signup-form form{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    margin-left: 6rem;
+    width: 370px;
+    gap: 20px;
+    margin-top: 1rem;
+}
+.signup-form form input{
+    width: 100%;
+    border-bottom: 1px solid gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+    height: 32px;
+    
+}
+#create-acc{
+    height: 48px;
+    background: rgba(255, 0, 0, 0.756);
+    border: none;
+    color: white;
+}
+#signin-google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    gap: 10px;
+    font-size: 16px;
+}
+.login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6rem;
+}
+button a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+}
+.login a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid gray;
+}
+button:hover{
+    cursor: pointer;
+}
+@media screen and (width> 1280px) {
+   
+    #navbar{
+    width: 80%;
+    font-size: 24px;
+   }
+   .image img{
+    width: 801px;
+    height: 781px;
+    margin-left: 8rem;
+   }
+   .signup-form{
+    width: 500px;
+   }
+   .signup-form form{
+    width: 400px;
+   }
+   #footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+ }
+
+ #img,.profile-drop img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    padding-left: 20px;
+  }
+  
+  .profile-drop {
+    position: relative; /* Ensure it's positioned within the nav */
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown {
+    width: 900px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.95);
+    color: black;
+    opacity: 0;
+    position: absolute; /* Dropdown appears below the profile image */
+    top: 150px; /* Adjust to position the dropdown correctly */
+    right: 60px;
+    z-index: 999;
+    transition: opacity 0.3s ease;
+    border: 2px solid rgba(128, 128, 128, 0.532);
+  }
+  .profile-drop {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+.list-profile ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    list-style: none; /* Remove default list styles */
+}
+
+.list li {
+    margin: 5px 0; /* Adjust spacing between items as needed */
+}
+
+.list a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color from parent */
+}
