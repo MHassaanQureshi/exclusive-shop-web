@@ -138,3 +138,6 @@ function unshow() {
     closeBtn.style.display = "none"; // Hide the close button
 }
 
+$(window).on("load", function() {
+    $(".loader-wrapper").fadeOut("slow");
+})

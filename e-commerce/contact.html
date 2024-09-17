@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="contact-style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
     <header>
         <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
         <a href="">ShopNow</a>
@@ -183,4 +187,9 @@
     </footer>
 </body>
 <script src="script.js"></script>
+<script>
+    $(window).on("load", function() {
+$(".loader-wrapper").fadeOut("slow");
+})
+</script>
 </html>
